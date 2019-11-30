@@ -1,0 +1,27 @@
+<zk>
+	<style>
+		.text{font-family:georgia;font-size:12px}
+		.header2{font-family:georgia;font-size:18px;font-weight: bold}
+	</style>
+	<groupbox style="background-color:#8EE5EE" mold="3d">
+		<caption style="">
+		<label style="font-family:georgia;font-size:20px;float:left">
+		INFORMAÇAO
+		</label>
+		</caption>
+		<vlayout style="padding-top:20px;padding-left:20px;">
+			
+			
+			<label sclass="header2">
+			PALUCHA!
+			</label>
+			<label multiline="true" sclass="text">
+				Obrigado por usar a nossa aplicação
+				
+				Proteja-se dos infratores, tenha cuidado de inserir correctamente o código do agente 
+				que prenteda verificar a autenticidade da sua identificação
+			</label>
+			
+		</vlayout>
+	</groupbox>
+</zk>

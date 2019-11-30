@@ -1,0 +1,59 @@
+<zk>
+	<style>
+		.z-button i {
+			font-size: 14px;
+		}
+	</style>
+	<window border="normal" width="900px" height="500px" style="margin:0px auto;" title="Seja Bem Vindo!"
+	apply="org.zkoss.simple.RegistrationComposer">
+		<grid id="formGrid" hflex="1" ctrlKeys="^h" >
+			<auxhead>
+				<auxheader colspan="2" label="Palucha" style="font-size:16px" image="/images/picture.png"/>
+			</auxhead>
+			<columns visible="false">
+				<column/>
+				<column/>
+			</columns>
+			
+		
+			
+			<rows >
+			
+				<row align="center">
+				<image src="/images/edmP1.png" ></image>
+				<image src="/images/fipagP2.png"></image>
+				</row>
+				<row>
+					Empresa:
+					<radiogroup id="genderRadio">
+						<radio label="EDM" value="male"  checked="true"/>
+						<radio label="FIPAG" value="female" />
+					</radiogroup>
+				</row>
+				<row id="codigoRow">
+				<!-- constraint="no empty" -->
+					Código do Técnico <textbox id="codigoBox" hflex="1" constraint="no empty"/>
+				</row>
+				<row  spans="2" align="center"  >
+					<hlayout>
+						<checkbox id="acceptTermBox"/> <label value=" Certifique de que tenha inserido correctamente o codigo do Técnico (Click for detail)" popup="termDetail, position=end_after"/>
+					</hlayout>
+				</row>
+				
+				<row spans="2" align="right">
+					<hlayout>
+					<!-- 	<label value="Help (Ctrl+h)"/> -->
+						<button id="resetButton" label="Reset" />
+						<button id="submitButton" label="Submit" disabled="true" />
+					</hlayout>
+				</row>
+			</rows>
+		</grid>
+		<popup id="termDetail" >
+			<include src="termofuse.zul"/>
+		</popup>
+		<popup id="helpPopup">
+			<include src="help.zul"/>
+		</popup>
+	</window>
+</zk>
